@@ -127,6 +127,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\IMG\adidas1.jpeg" />
+    <Content Include="Content\IMG\adidas2.jpeg" />
+    <Content Include="Content\IMG\adidas3.jpeg" />
+    <Content Include="Content\IMG\logo.jpeg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

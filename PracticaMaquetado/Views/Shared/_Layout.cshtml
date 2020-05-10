@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Practica MAQUETADO</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
+</head>
+<body>
+    <div id="container">
+        <!--Cabecera -------------------------------------------------------------------------------->
+
+
+        <header>
+            <img class="logo" src="~/Content/IMG/logo.jpg" alt="LogoAdidas" />
+
+            <nav>
+                <ul>
+                    <li> <a href="/">Principal</a></li>
+                    <li> <a href="/Home/Contact">Contact</a></li>
+                    <li><a href="/Home/About"> Acerd de..</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <!--CONTENIDO -------------------------------------------------------------------------->
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <!--CONTENIDO RELACIONADO --------------------------------------------------------------->
+
+        <aside id="Publicidad">
+            <article>
+                <div>
+                    <h2>Titulo del Aside</h2>
+                    <p> PRUEBA DEL ASIDE</p>
+
+                    <img class="adidasTres" src="/Content/IMG/adidas3.jpg" alt="asidefoto" />
+                </div>
+            </article>
+
+        </aside>
+
+
+        <!--PIE DE PAGINA---------------------------------------------------------------------->
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Practicas LPPA MAQUETADO - ROSSI CARLA</p>
+        </footer>
+
+    </div>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

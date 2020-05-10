@@ -1,0 +1,93 @@
+﻿/*RETOQUE PRINCIPAL*/
+
+html, body {
+    height: 100%;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    border: none;
+}
+
+p {
+    text-align: justify;
+}
+
+/*LAYOUT...............................*/
+
+#container {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.logo {
+    margin: 10px;
+    width: 180px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+    nav ul li {
+        list-style: none;
+        display: inline;
+    }
+
+        nav ul li > a {
+            color: #fafafa;
+            text-decoration: none;
+            background-color: #a5a5a5;
+            margin: 5px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+header {
+    display: block;
+    background-color: #000000;
+    padding: 5px 0px;
+    margin-bottom: 5px;
+}
+
+section {
+    background-color: #c6cbcb;
+    padding: 4px;
+    overflow: auto;
+    float: left;
+    width: 70%;
+}
+
+
+aside {
+    float: right;
+    width: 29%;
+    background-color: #c1c1c1
+}
+
+.adidasUno {
+    margin: 10px;
+    width: 150px;
+}
+
+.adidasDos {
+    margin: 10px;
+    width: 130px;
+}
+
+.adidasTres {
+    padding: 15px;
+}
+
+
+footer {
+    clear: both;
+    position: relative;
+    height: 40px;
+    background-color: #000000;
+    color: aliceblue;

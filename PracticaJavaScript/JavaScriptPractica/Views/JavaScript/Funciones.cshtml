@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Funciones";
+}
+
+<h2>Carga de Objetos con JavaScript</h2>
+
+<br />
+<label>Codigo</label>
+<input type="text" name="txt1" id="txt1">
+<br />
+<br />
+<label>Nombre</label>
+<input type="text" name="txt2" id="txt2">
+<br />
+<br />
+<input id="btnGuardar" class="button" type="submit" value="GUARDAR" onclick="GuardarDatos()" />
+
+<br />
+<br />
+<br />
+<input id="btnListar" class="button" type="submit" value="LISTAR" onclick="mostrarLista()" />
+
+
+<span id="spanDatos">
+
+
+</span>
+
+
+@section scripts
+{
+    <script>
+
+        function mostrar() {
+
+        
+        var myObj = { Codigo: (txt1), Nombre: (txt2) };
+        window.alert(myObj.Codigo + ' , ' + myObj.Nombre)
+        }
+
+
+
+        //var codigo = (txt1);
+        //var vector = ();
+        //var strdatos = '';
+        //function GuardarDatos() {
+        //    for (var i = 0; i = < vector.length; i++) {
+        //        strdatos+= vector[i] + 
+
+
+        //    }
+        
+        //}
+
+
+     
+
+    </script>
+
+}

@@ -65,14 +65,14 @@ section {
     background-color: #efb1b1;
     padding: 5px;
     overflow: auto;
-    float: left;
+    float: right;
     width: 75%;
 }
 
 aside {
-    float: right;
+    float: left;
     width: 24%;
-    background-color: #808080;
+    /*background-color: #808080;*/
 }
 
 footer {

@@ -32,12 +32,37 @@
 {
     <script>
 
-        function mostrar() {
+        class myobj {
+            Codigo;
+            Nombre;
+
+            Fill(cod, nom) {
+                this.Codigo = cod;
+                this.Nombre = nom;
+            }
+        }
+
+        var lista = [];
+        var ilista = 0;
+
+        function Guardar() {
+            var codigo = document.getElementById('txtCodigo').value;
+            var Nombre = document.getElementById('txtNombre').value;
+            if (codigo != "" && Nombre != "") {
+                var o = new myObj();
+                o.Fill(codigo, Nombre);
+                lista.push(o);
+                ilista++;
+            }
+
+        }
+
+            //function mostrar() {
 
         
-        var myObj = { Codigo: (txt1), Nombre: (txt2) };
-        window.alert(myObj.Codigo + ' , ' + myObj.Nombre)
-        }
+            //var myObj = { Codigo: (txt1), Nombre: (txt2) };
+            //window.alert(myObj.Codigo + ' , ' + myObj.Nombre)
+            //}
 
 
 

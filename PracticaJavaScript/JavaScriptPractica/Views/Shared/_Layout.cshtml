@@ -1,43 +1,54 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Mi aplicación ASP.NET</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+    <title> @ViewBag.Title - PRACTICAS LPPA Carli</title>
+    <link href="~/Content/Site.css" rel="stylesheet" />
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Nombre de la aplicación", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Acerca de", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+    <div id="container">
+
+        <!--Cabecera-->
+        <header>
+            <img class="logo" src="~/Content/img/Logo.gif" alt="logo uai" />
+            <nav>
+                <ul>
+                    <li> <a href="/">Principal</a> </li>
+                    <li> <a href="/Home/Contact">Contacto</a> </li>
+                    <li> <a href="/Home/About">Acerca de</a></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
+            </nav>
+        </header>
+
+        <!--Contenido-->
+        <section>
+            <article>
+                @RenderBody()
+            </article>
+        </section>
+
+        <!--Contenido Relacionado-->
+
+        <aside id="pub">
+            <article>
+                <div>
+                    <h3>Titulo del Aside</h3>
+                    <p>El elemento HTML <span>Aside</span> representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</p>
+                    <p>Los autores no deberían utilizar el elemento aside para encerrar contenido que no guarda relación con la sección en la que se define. Su contenido debe tener alguna relación con su entorno.</p>
+                    <img class="propa" src="~/Content/img/propa_uai.gif" alt="propauai" />
+
+                </div>
+            </article>
+        </aside>
+
+        <!--Pie de Pagina-->
         <footer>
-            <p>&copy; @DateTime.Now.Year - Mi aplicación ASP.NET</p>
+            <p>&copy; @DateTime.Now.Year - UAI NORTE - CARLA ROSSI</p>
         </footer>
     </div>
-
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>
